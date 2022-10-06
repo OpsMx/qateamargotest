@@ -11,7 +11,7 @@ spec:
       provider:
         opsmx:
           gateUrl: https://argoqa-helm.isd-dev.opsmx.net/
-          application: elkapplicationbyqa
+          application: analysisappoct6
           baselineStartTime: "2021-11-03T11:29:46.915Z"
           canaryStartTime: "2021-11-03T11:29:46.915Z" 
           user: admin
@@ -20,8 +20,8 @@ spec:
             pass: 80
             marginal: 60
           services:
-          - serviceName: elkservice
-            logTemplateName: elktemplate
+          - serviceName: elksvc1
+            logTemplateName: oct6logtemp
             logScopeVariables: "kubernetes.container_name"
             baselineLogScope: "baseapp-rest-1"
             canaryLogScope: "canaryapp-rest-1"
